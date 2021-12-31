@@ -242,7 +242,7 @@ section {
 .singles > .flex > p {
   width: fit-content;
   align-self: center;
-  margin: 0 0.5em;
+  margin: 0.5em 0.5em;
   padding: 1em;
   background-color: rgba(128, 0, 128, 0.6);
   border-radius: 20px;
@@ -327,6 +327,18 @@ h3 {
   text-align: center;
 }
 
+@media only screen and (max-width: 1200px) {
+  .carousel {
+    width: 450px;
+    height: 253.125px;
+  }
+
+  .singles iframe {
+    width: 450px;
+    height: 253.125px;
+  }
+}
+
 @media only screen and (max-width: 900px) {
   .carousel::before,
   .carousel::after,
@@ -338,11 +350,21 @@ h3 {
 }
 
 @media only screen and (max-width: 600px) {
+  .carousel {
+    width: 300px;
+    height: 168.75px;
+  }
+
   .carousel::before,
   .carousel::after,
   .carousel__prev,
   .carousel__next {
     width: 2rem;
     height: 2rem;
+  }
+
+  .singles iframe {
+    width: 300px;
+    height: 168.75px;
   }
 }
