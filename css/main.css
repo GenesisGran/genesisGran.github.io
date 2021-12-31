@@ -21,8 +21,12 @@ a {
   color: rgb(111, 140, 255);
 }
 
-header a:hover {
+a:hover {
   font-weight: bold;
+  text-decoration: underline;
+}
+
+header a:hover {
   color: black;
 }
 
@@ -89,7 +93,6 @@ header li {
   font-size: 1.5em;
   list-style: none;
   margin: 0;
-  padding: 24px 0;
   background-color: purple;
   border: 2px solid var(--border-color);
 }
@@ -97,6 +100,7 @@ header li {
 header > nav > ul > li > a {
   display: block;
   height: 74px;
+  padding: 24px 0;
 }
 
 header li:hover {
