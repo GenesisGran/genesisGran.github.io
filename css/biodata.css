@@ -1,0 +1,114 @@
+body > nav ul {
+  counter-reset: item;
+}
+body > nav li {
+  display: block;
+}
+body > nav li::before {
+  content: counters(item, ".") " ";
+  counter-increment: item;
+}
+
+h3,
+h4,
+h5 {
+  margin-block: 0.8em 0;
+}
+
+.biodata {
+  border: var(--border-color) solid 0.2em;
+  padding: 0 0.2em;
+  background-color: purple;
+  margin-left: 0.5em;
+
+  float: right;
+  width: 320px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas:
+    "h3 h3"
+    "img img"
+    "heading1 heading1"
+    "left1 right1"
+    "heading2 heading2"
+    "left2 right2"
+    "heading3 heading3"
+    "left3 right3"
+    "heading4 heading4"
+    "left4 right4"
+    "heading5 heading5"
+    "left5 right5"
+    "heading6 heading6"
+    "left6 right6";
+}
+
+.biodata h3 {
+  grid-area: h3;
+  text-align: center;
+  font-size: 1.5em;
+  border-top: rgb(0, 255, 0) solid 0.2em;
+  border-bottom: rgb(0, 255, 0) solid 0.2em;
+  margin-bottom: 0.5em;
+}
+
+.biodata h4 {
+  padding: 0.5em 0;
+  font-size: 1.2em;
+  text-align: center;
+  border-top: rgb(0, 255, 0) solid 0.2em;
+  border-bottom: rgb(0, 255, 0) solid 0.2em;
+}
+
+.biodata img {
+  grid-area: img;
+  margin: 0 auto;
+}
+
+.heading1 {
+  grid-area: heading1;
+}
+.heading2 {
+  grid-area: heading2;
+}
+.heading3 {
+  grid-area: heading3;
+}
+.heading4 {
+  grid-area: heading4;
+}
+.heading5 {
+  grid-area: heading5;
+}
+.heading6 {
+  grid-area: heading6;
+}
+
+.left,
+.right {
+  line-height: 1.2em;
+}
+
+.color1,
+.color2 {
+  text-align: center;
+}
+
+section,
+body > nav {
+  width: fit-content;
+  border: var(--border-color) solid 0.2em;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0 0.5em;
+  margin: 2em 0;
+}
+
+#a-Sides ul,
+#b-Sides ul,
+#media .flex {
+  display: flex;
+  column-gap: 1.5em;
+}
+
+h3 {
+  display: inline-block;
+}
