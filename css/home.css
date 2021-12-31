@@ -351,8 +351,8 @@ h3 {
 
 @media only screen and (max-width: 600px) {
   .carousel {
-    width: 300px;
-    height: 168.75px;
+    width: 500px;
+    height: 281.25px;
   }
 
   .carousel::before,
@@ -363,14 +363,15 @@ h3 {
     height: 2rem;
   }
 
-  .singles iframe {
-    width: 300px;
-    height: 168.75px;
+  iframe {
+    width: 500px;
+    height: 281.25px;
   }
 }
 
-@media only screen and (max-width: 155px) {
+@media only screen and (max-width: 300px) {
   body {
-    zoom: 50%;
+    margin: 0;
+    height: 100%;
   }
 }
