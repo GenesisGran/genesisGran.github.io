@@ -134,3 +134,9 @@ header li::before {
     width: 100%;
   }
 }
+
+@media only screen and (max-width: 120px) {
+  header {
+    width: 400vw;
+  }
+}
